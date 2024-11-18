@@ -333,15 +333,28 @@ button:hover {
     color: #fff;
     line-height: 1.3;
     margin-bottom: 25px;
-
+    text-shadow: 
+        -1px -1px 0 #000, /* Sombra hacia arriba a la izquierda */
+        1px -1px 0 #000,  /* Sombra hacia arriba a la derecha */
+        -1px 1px 0 #000,  /* Sombra hacia abajo a la izquierda */
+        1px 1px 0 #000;   /* Sombra hacia abajo a la derecha */
+    font-weight: bold;
 }
 
 .first-content-txt p {
     font-size: 17px;
-    color: #fff;
+    color: #fff; /* Color del texto */
+    text-shadow: 
+        -1px -1px 0 #000, /* Sombra hacia arriba a la izquierda */
+        1px -1px 0 #000,  /* Sombra hacia arriba a la derecha */
+        -1px 1px 0 #000,  /* Sombra hacia abajo a la izquierda */
+        1px 1px 0 #000;   /* Sombra hacia abajo a la derecha */
     margin-bottom: 45px;
     max-width: 400px;
+    font-weight: bold;
 }
+
+
 
 .butons {
     display: flex;
