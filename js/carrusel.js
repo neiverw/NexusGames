@@ -38,18 +38,3 @@ document.addEventListener('DOMContentLoaded', function () {
         prevButton.onclick = prevImage;
     }
 
-    // Inicia el cambio automático
-    startAutoSlide();
-
-    // Manejo del menú
-    const menuToggle = document.querySelector('.menu-toggle');
-    const links = document.querySelector('.links');
-    const bodyContent = document.querySelector('body'); // Usamos body para mover el contenido
-
-    if (menuToggle && links) {
-        menuToggle.addEventListener('click', function () {
-            links.classList.toggle('show');
-            bodyContent.classList.toggle('content-shift');  // Desplazamos el contenido a la derecha
-        });
-    }
-});
