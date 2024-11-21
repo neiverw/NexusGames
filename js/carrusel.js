@@ -38,3 +38,4 @@ document.addEventListener('DOMContentLoaded', function () {
         prevButton.onclick = prevImage;
     }
 
+});
