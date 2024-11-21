@@ -2,10 +2,10 @@ const backgroundVideo = document.getElementById("background-video");
 const firstContentImg = document.getElementById("button1");
 const cameraButton = document.getElementById("cameraButton");
 const soundButton = document.getElementById("soundButton");
-const cameraUnlockedIcon = "imagenes/PepiconsPopCameraOff.png"; // Icono cuando el video está activo
-const cameraLockedIcon = "imagenes/PepiconsPopCamera.png"; // Icono cuando la imagen está activa
-const soundOnIcon = "imagenes/sound-on.png"; // Icono cuando el sonido está activado
-const soundOffIcon = "imagenes/sound-off.png"; // Icono cuando el sonido está desactivado
+const cameraUnlockedIcon = "imagenes/PepiconsPopCamera.png"; // Icono cuando el video está activo
+const cameraLockedIcon = "imagenes/PepiconsPopCameraOff.png"; // Icono cuando la imagen está activa
+const soundOnIcon = "imagenes/CharmSoundUp.png"; // Icono cuando el sonido está activado
+const soundOffIcon = "imagenes/CharmSoundMute.png"; // Icono cuando el sonido está desactivado
 
 // Control de interacción para habilitar sonido en móviles
 let hasInteracted = false; // Variable para detectar la interacción
