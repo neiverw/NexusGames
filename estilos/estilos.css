@@ -449,7 +449,7 @@ button:hover {
 }
 
 .product-txt {
-  padding: 20px;
+  padding: 5px;
 }
 
 h3 {
@@ -462,7 +462,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 
 .price p {
