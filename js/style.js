@@ -12,3 +12,13 @@ const menuLinks = document.querySelectorAll('#mobile-menu .overlay-content a');
 menuLinks.forEach(link => {
     link.addEventListener('click', closeNav);
 });
+document.querySelectorAll('.video-container').forEach(container => {
+    const video = container.querySelector('.product-video');
+    container.addEventListener('mouseenter', () => {
+        video.play();
+    });
+    container.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0; // Reinicia el video
+    });
+});

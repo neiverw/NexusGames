@@ -550,6 +550,33 @@ h3 {
   background-color: #ef4444;
   color: white;
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.video-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: 1;
+}
+
+.video-container:hover video {
+  display: block;
+}
+
 
 .pie-pagina {
   background: linear-gradient(180deg, #000, #222);
