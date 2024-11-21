@@ -12,13 +12,3 @@ const menuLinks = document.querySelectorAll('#mobile-menu .overlay-content a');
 menuLinks.forEach(link => {
     link.addEventListener('click', closeNav);
 });
-/*contactanos*/
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    // Mostrar mensaje de agradecimiento
-    document.getElementById('gracias').classList.remove('hidden');
-    
-    // Resetear el formulario
-    this.reset();
-  });
