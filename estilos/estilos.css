@@ -274,8 +274,16 @@ header h1:hover {
   text-align: center;
 }
 
-h2 {
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-container h2 {
   font-size: 24px;
+  background-color: #000;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
