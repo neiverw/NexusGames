@@ -374,6 +374,34 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+/* Estilos para el botón de sonido */
+.sound-button {
+  position: absolute;
+  bottom: 20px;
+  right: 80px; /* A la derecha del botón de la cámara */
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Encima del contenido */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sound-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.sound-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
 .first-content-img {
   background-image: none; /* Inicialmente sin imagen */
   background-position: center center;
