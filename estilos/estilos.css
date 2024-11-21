@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -274,7 +275,7 @@ header h1:hover {
   text-align: center;
 }
 
-h2{
+h2 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -337,13 +338,51 @@ button:hover {
 
 /*inicio*/
 
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.camera-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Encima del contenido */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.camera-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.camera-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .first-content-img {
-  background-image: url("../imagenes/spider2index.png");
+  background-image: none; /* Inicialmente sin imagen */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 95vh;
+  position: relative; /* Para posicionar el video y el botón */
 }
+
 
 .first-content {
   display: flex;
@@ -409,8 +448,7 @@ button:hover {
   background-color: red;
 }
 
-
-.product-container{
+.product-container {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -486,6 +524,7 @@ h3 {
 }
 
 .pie-pagina {
+  background: linear-gradient(180deg, #000, #222);
   width: 100%;
   background-color: #000;
   border-radius: 25px;
@@ -577,6 +616,7 @@ h3 {
 }
 
 .derechos-de-autor {
+  background: linear-gradient(180deg, #000, #222);
   width: 100%;
   background-color: #000;
   color: #fff;
@@ -625,6 +665,15 @@ h3 {
   }
 }
 
+@media (max-width: 768px) {
+  .product-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .pie-pagina {
     padding: 5px 0;
@@ -646,41 +695,3 @@ h3 {
     width: 100%;
   }
 }
-
-.modal {
-  display: none; /* Ocultar por defecto */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal-content {
-  background: black;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 400px;
-  width: 90%;
-  position: relative;
-}
-
-.modal-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.modal-content .close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
-  cursor: pointer;
-}
-

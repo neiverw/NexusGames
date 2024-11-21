@@ -56,21 +56,30 @@
         </div>
 
     </header>
-    <div id="button1" class="first-content-img">
+    <div id="button1" class="first-content-img" style="background-image: none;">
+        <video autoplay muted loop id="background-video" class="active">
+          <source src="videos/Marvel's_Spiderman_video_index.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
         <div class="first-content">
-            <div class="first-content-txt">
-                <h1> ¡Compra tu juego favorito aquí! </h1>
-                <p>
-                    Con unos descuentos increíbles y unas ofertas irresistibles, compra ahora y hasta obtendrás un
-                    20% de cashback por tu compra; disfruta y paga menos.
-                </p>
-                <div class="butons">
-                    <a href="html/sobre_nosotros.html" class="btn-1">informacion</a>
-                    <a href="html/productos.html" class="btn-1">juegos</a>
-                </div>
+          <div class="first-content-txt">
+            <h1>¡Compra tu juego favorito aquí!</h1>
+            <p>
+              Con unos descuentos increíbles y unas ofertas irresistibles, compra ahora y hasta obtendrás un
+              20% de cashback por tu compra; disfruta y paga menos.
+            </p>
+            <div class="butons">
+              <a href="html/sobre_nosotros.html" class="btn-1">informacion</a>
+              <a href="html/productos.html" class="btn-1">juegos</a>
             </div>
+          </div>
         </div>
-    </div>
+        <button class="camera-button" id="cameraButton">
+          <img src="../imagenes/PepiconsPopCameraOff.svg" alt="Cámara">
+        </button>
+      </div>
+      
+      
     
    
         <footer class="pie-pagina">
@@ -104,6 +113,7 @@
             </div>
         </footer>
 
+        <script src="js/alternarvideo.js"></script>
         <script type="text/javascript" src="js/carrusel.js"></script>
         <script type="text/javascript" src="js/style.js"></script>
 </body>
