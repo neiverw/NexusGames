@@ -115,19 +115,6 @@ header h1:hover {
   transform: scale(1.1);
 }
 
-.carousel-background {
-  position: relative;
-  width: 100%;
-  background-image: url("https://zoom.contentools.com/api/v1/media/230512/download/");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px 0;
-  /* Ajusta el espacio alrededor del carrusel */
-  top: 20px;
-  height: 100vh;
-}
-
 .Contactanos-brackground {
   position: relative;
   width: 100%;
@@ -136,21 +123,33 @@ header h1:hover {
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px 0;
-  height: 100vh;
+  height: 95vh;
 }
 
+.carousel-background {
+  position: relative;
+  width: 100%;
+  background-image: url("https://zoom.contentools.com/api/v1/media/230512/download/");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  height: 95vh;
+
+  /* Centrando el contenido dentro del fondo */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
 
 /* Estilos del carrusel */
 .carousel {
-  position: relative;
   width: 80%;
   max-width: 900px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  margin: 20px auto;
-  min-height: 80vh;
-  top: 20px;
+  height: 20p´x;
 }
 
 .carousel-images {
@@ -161,7 +160,7 @@ header h1:hover {
 .carousel-images img {
   width: 100%;
   flex-shrink: 0;
-  min-height: 80vh;
+  height: 100%;
 }
 
 .carousel-btn {
@@ -255,7 +254,7 @@ header h1:hover {
   /* Centrado horizontal */
   align-items: center;
   /* Centrado vertical */
-  height: 90vh;
+  height: 95vh;
   /* Altura de toda la pantalla */
   padding: 20px;
   /* Espaciado interno */
@@ -276,7 +275,6 @@ header h1:hover {
 }
 
 h2 {
-  background-color: #000;
   font-size: 24px;
   margin-bottom: 20px;
   display: flex;
@@ -336,7 +334,7 @@ button:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 95vh;
 }
 
 .first-content {
@@ -355,12 +353,9 @@ button:hover {
   line-height: 1.3;
   margin-bottom: 25px;
   text-shadow: -1px -1px 0 #000,
-    /* Sombra hacia arriba a la izquierda */
-    1px -1px 0 #000,
-    /* Sombra hacia arriba a la derecha */
-    -1px 1px 0 #000,
-    /* Sombra hacia abajo a la izquierda */
-    1px 1px 0 #000;
+    /* Sombra hacia arriba a la izquierda */ 1px -1px 0 #000,
+    /* Sombra hacia arriba a la derecha */ -1px 1px 0 #000,
+    /* Sombra hacia abajo a la izquierda */ 1px 1px 0 #000;
   /* Sombra hacia abajo a la derecha */
   font-weight: bold;
 }
@@ -370,12 +365,9 @@ button:hover {
   color: #fff;
   /* Color del texto */
   text-shadow: -1px -1px 0 #000,
-    /* Sombra hacia arriba a la izquierda */
-    1px -1px 0 #000,
-    /* Sombra hacia arriba a la derecha */
-    -1px 1px 0 #000,
-    /* Sombra hacia abajo a la izquierda */
-    1px 1px 0 #000;
+    /* Sombra hacia arriba a la izquierda */ 1px -1px 0 #000,
+    /* Sombra hacia arriba a la derecha */ -1px 1px 0 #000,
+    /* Sombra hacia abajo a la izquierda */ 1px 1px 0 #000;
   /* Sombra hacia abajo a la derecha */
   margin-bottom: 45px;
   max-width: 400px;
@@ -418,7 +410,6 @@ button:hover {
   margin: 0 auto; /* Centrar todo el contenedor en el eje horizontal */
   width: fit-content; /* Ajustar el tamaño del contenedor al contenido */
 }
-
 
 .product-1 {
   background-color: #1e3a8a;
@@ -491,6 +482,7 @@ h3 {
   margin-top: auto;
   /* Empuja el pie de página hacia abajo */
   border-top: 1px solid gray;
+  margin-top: 10px;
 }
 
 .pie-pagina .grupo-1 {
@@ -588,7 +580,6 @@ h3 {
 }
 
 @media screen and (max-width: 950px) {
-
   .nav-links,
   .btn {
     display: none;
@@ -608,7 +599,6 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
-
   .nav-links,
   .btn {
     display: none;
@@ -644,6 +634,7 @@ h3 {
     width: 100%;
   }
 }
+<<<<<<< HEAD
 .modal {
   display: none; /* Ocultar por defecto */
   position: fixed;
@@ -680,3 +671,5 @@ h3 {
   font-size: 24px;
   cursor: pointer;
 }
+=======
+>>>>>>> e9f73f6 (cambios xd)
