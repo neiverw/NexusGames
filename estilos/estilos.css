@@ -409,6 +409,11 @@ button:hover {
   background-color: red;
 }
 
+
+.product-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /*Prouctos*/
 .product-content {
   display: grid;
