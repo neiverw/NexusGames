@@ -279,6 +279,9 @@ h2 {
   background-color: #000;
   font-size: 24px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .form-group {

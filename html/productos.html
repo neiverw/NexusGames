@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexusGames Studio</title>
     <script src="https://kit.fontawesome.com/e890b5bb12.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="icon" href="imagenes/" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <img src="imagenes/logo.png" alt="NexusGames Studio">
+            <img src="../imagenes/logo.png" alt="NexusGames Studio">
         </div>
         <h1>NexusGames Studio</h1>
         <nav class="nav-links">
@@ -23,7 +23,7 @@
                     <li><a href="#button1">Inicio</a></li>
                 </div>
                 <div id="link1">
-                    <li><a href="html/productos.html">Productos</a></li>
+                    <li><a href="#button2">Productos</a></li>
                 </div id="link1">
                 <div>
                     <li><a href="#button3">Sobre nosotros</a></li>
@@ -56,26 +56,12 @@
         </div>
 
     </header>
-    <div id="button1" class="first-content-img">
-        <div class="first-content">
-            <div class="first-content-txt">
-                <h1> ¡Compra tu juego favorito aquí! </h1>
-                <p>
-                    Con unos descuentos increíbles y unas ofertas irresistibles, compra ahora y hasta obtendrás un
-                    20% de cashback por tu compra; disfruta y paga menos.
-                </p>
-                <div class="butons">
-                    <a href="#" class="btn-1">informacion</a>
-                    <a href="#" class="btn-1">juegos</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <main id="button2" class="product container">
         <h2>Todos los juegos</h2>
         <div class="product-content">
             <div class="product-1">
-                <img src="/imagenes/league-of-legends.png" alt="Juego lorem">
+                <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="Juego lorem">
                 <div class="product-txt">
                     <h3>Juego lorem</h3>
                     <div class="price">
@@ -86,7 +72,7 @@
             </div>
     
             <div class="product-1">
-                <img src="/imagenes/Fortnite-7.png" alt="Juego lorem">
+                <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="Juego lorem">
                 <div class="product-txt">
                     <h3>Juego lorem</h3>
                     <div class="price">
@@ -97,7 +83,7 @@
             </div>
 
             <div class="product-1">
-                <img src="/imagenes/valorant.png" alt="Juego lorem">
+                <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="Juego lorem">
                 <div class="product-txt">
                     <h3>Juego lorem</h3>
                     <div class="price">
@@ -108,7 +94,7 @@
             </div>
 
             <div class="product-1">
-                <img src="/imagenes/minecraft.png" alt="Juego lorem">
+                <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="Juego lorem">
                 <div class="product-txt">
                     <h3>Juego lorem</h3>
                     <div class="price">
@@ -119,7 +105,7 @@
             </div>
 
             <div class="product-1">
-                <img src="/imagenes/wow.png" alt="Juego lorem">
+                <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="Juego lorem">
                 <div class="product-txt">
                     <h3>Juego lorem</h3>
                     <div class="price">
@@ -130,7 +116,7 @@
             </div>
 
             <div class="product-1">
-                <img src="/imagenes/sjw.png" alt="Juego lorem">
+                <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="Juego lorem">
                 <div class="product-txt">
                     <h3>Juego lorem</h3>
                     <div class="price">
@@ -141,7 +127,7 @@
             </div>
 
             <div class="product-1">
-                <img src="/imagenes/sao.png" alt="Juego lorem">
+                <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="Juego lorem">
                 <div class="product-txt">
                     <h3>Juego lorem</h3>
                     <div class="price">
@@ -176,37 +162,9 @@
         </div>
     </main>
     
-    <div class=" inicio">
-        <div id="button3" class="carousel-background">
-            <div class="carousel">
-                <div class="carousel-images">
-                    <img src="https://pic.clubic.com/v1/images/2171191/raw" alt="Imagen 1">
-                    <img src="https://th.bing.com/th/id/OIP.QsejROtQ6X-HjHY028D_PQHaEK?rs=1&pid=ImgDetMain"
-                        alt="Imagen 2">
-                    <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70050000035988/fa97799ac600ba3b5fd93998f8bf5a2be71f6a0a280cc4e1b5c5cd7f731aa7fa"
-                        alt="Imagen 3">
-                </div>
-                <button class="carousel-btn prev" onclick="prevImage()">&#10094;</button>
-                <button class="carousel-btn next" onclick="nextImage()">&#10095;</button>
-            </div>
-        </div>
-        <div class="Contactanos-brackground">
-        <div id="button4" class="center">
-            <div class="contact-container">
-                <h2>Contáctanos</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="nombre" placeholder="Nombre" required>
-                        <input type="text" id="apellido" placeholder="Apellido" required>
-                    </div>
-                    <input type="email" id="email" placeholder="Email *" required>
-                    <textarea id="mensaje" placeholder="Escribe un mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                    <p id="gracias" class="hidden">¡Gracias por tu mensaje!</p>
-                </form>
-            </div>
-        </div>
-    </div>
+
+
+        
         <footer class="pie-pagina">
             <div class="grupo-1">
                 <div class="box">
