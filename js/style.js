@@ -49,3 +49,10 @@ function showNotification(message) {
         notification.remove();
     }, 3000);
 }
+
+ // Función que cambia el texto del botón al hacer clic
+ function markAsPurchased(button) {
+    button.textContent = "En colección";
+    button.classList.add("purchased"); // Añade una clase opcional para estilos
+    button.setAttribute("disabled", true); // Desactiva el botón para evitar múltiples clics
+}

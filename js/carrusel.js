@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextImage, 3500);
+        autoSlideInterval = setInterval(nextImage, 7000);
     }
 
     function resetAutoSlide() {
@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Añadimos los eventos onclick a los botones del carrusel
     const nextButton = document.querySelector('.next');
     const prevButton = document.querySelector('.prev');
+    startAutoSlide();
     if (nextButton && prevButton) {
         nextButton.onclick = nextImage;
         prevButton.onclick = prevImage;
