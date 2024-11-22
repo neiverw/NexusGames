@@ -576,6 +576,30 @@ h3 {
 .video-container:hover video {
   display: block;
 }
+/* Estilo de la notificación flotante */
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+/* Animación de aparición y desaparición */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -60%); }
+  10%, 90% { opacity: 1; transform: translate(-50%, -50%); }
+  100% { opacity: 0; transform: translate(-50%, -40%); }
+}
+
 
 
 .pie-pagina {
